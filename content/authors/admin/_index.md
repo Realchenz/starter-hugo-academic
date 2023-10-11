@@ -31,16 +31,16 @@ social:
     icon_pack: ai
     link: uploads/resume.pdf
 organizations:
-  - name: Stanford University
+  - name: Brandeis Univeristy
     url: https://www.stanford.edu/
 education:
   courses:
     - course: MSc in Computer Science
       institution: Brandeis University
-      year: ""
-    - course: BEng in Mechanical Design, Manufacuturing and Their Automation
+      year: 2025
+    - course: BEng in Mechanical Design, Manufacturing and Their Automation
       institution: Dalian University of Technology
-      year: ""
+      year: 2021
 superuser: true
 status:
   icon: ☕️
