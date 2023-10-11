@@ -31,8 +31,8 @@ social:
     icon_pack: ai
     link: uploads/resume.pdf
 organizations:
-  - name: Brandeis Univeristy
-    url: https://www.stanford.edu/
+  - name: Brandeis University
+    url: https://www.brandeis.edu/
 education:
   courses:
     - course: MSc in Computer Science
