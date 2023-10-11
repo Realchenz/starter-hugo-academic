@@ -26,7 +26,7 @@ social:
     link: https://github.com/gcushen
   - icon: linkedin
     icon_pack: fab
-    link: https://www.linkedin.com/
+    link: https://www.linkedin.com/in/zhenxu-zach-chen-5a5a19169/
   - icon: cv
     icon_pack: ai
     link: uploads/resume.pdf
