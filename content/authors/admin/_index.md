@@ -2,8 +2,8 @@
 title: Zhenxu Chen 陈臻旭
 role: Master's student in Computer Science @ Brandeis University
 avatar_filename: wechatimg11.jpg
-bio: My research interests include distributed robotics, mobile computing and
-  programmable matter.
+bio: My research interests include distributed systems, high performance
+  computing and software development.
 interests:
   - Artificial Intelligence
   - Computational Linguistics
@@ -35,15 +35,12 @@ organizations:
     url: https://www.stanford.edu/
 education:
   courses:
-    - course: PhD in Artificial Intelligence
-      institution: Stanford University
-      year: 2012
-    - course: MEng in Artificial Intelligence
-      institution: Massachusetts Institute of Technology
-      year: 2009
-    - course: BSc in Artificial Intelligence
-      institution: Massachusetts Institute of Technology
-      year: 2008
+    - course: MSc in Computer Science
+      institution: Brandeis University
+      year: ""
+    - course: BEng in Mechanical Design, Manufacuturing and Their Automation
+      institution: Dalian University of Technology
+      year: ""
 superuser: true
 status:
   icon: ☕️
