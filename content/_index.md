@@ -81,22 +81,14 @@ sections:
       #   Leave other parameters empty if not required.
       #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
       items:
-        - certificate_url: https://www.coursera.org
+        - certificate_url: https://www.udemy.com
           date_end: '2023-11-12'
           date_start: '2023-10-12'
           description: Begin DevOps Career | Linux, AWS, Scripting, Jenkins, Ansible, Docker, K8s, Projects & ChatGPT.
           organization: udemy
-          organization_url: https://www.coursera.org
+          organization_url: https://www.udemy.com
           title: DevOps Advanced
           url: https://www.udemy.com/course/decodingdevops/
-        - certificate_url: https://www.edx.org
-          date_end: ''
-          date_start: '2021-01-01'
-          description: Formulated informed blockchain models, hypotheses, and use cases.
-          organization: edX
-          organization_url: https://www.edx.org
-          title: Blockchain Fundamentals
-          url: https://www.edx.org/professional-certificate/uc-berkeleyx-blockchain-fundamentals
     design:
       columns: '2'
   - block: collection
