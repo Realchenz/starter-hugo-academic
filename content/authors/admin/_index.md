@@ -5,25 +5,25 @@ avatar_filename: wechatimg11.jpg
 bio: My research interests include distributed systems, high performance
   computing and software development.
 interests:
-  - Artificial Intelligence
-  - Computational Linguistics
-  - Information Retrieval
+  - Software Development
+  - Distributed Systems
+  - High Performance Computing
 social:
   - icon: envelope
     icon_pack: fas
-    link: /#contact
+    link: mailto:zhenxuchen@brandeis.edu
   - icon: twitter
     icon_pack: fab
-    link: https://twitter.com/GeorgeCushen
+    link: https://twitter.com/ZhenxuChen
     label: Follow me on Twitter
     display:
       header: true
   - icon: graduation-cap
     icon_pack: fas
-    link: https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ
+    link: https://scholar.google.com.hk/?hl=zh-CN
   - icon: github
     icon_pack: fab
-    link: https://github.com/gcushen
+    link: https://github.com/Realchenz
   - icon: linkedin
     icon_pack: fab
     link: https://www.linkedin.com/in/zhenxu-zach-chen-5a5a19169/
@@ -37,10 +37,10 @@ education:
   courses:
     - course: MSc in Computer Science
       institution: Brandeis University
-      year: 2025
+      year: 2023-2025
     - course: BEng in Mechanical Design, Manufacturing and Their Automation
       institution: Dalian University of Technology
-      year: 2021
+      year: 2017-2021
 superuser: true
 status:
   icon: ☕️
