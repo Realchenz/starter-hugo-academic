@@ -82,8 +82,8 @@ sections:
       #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
       items:
         - certificate_url: https://www.coursera.org
-          date_end: 'November 2023'
-          date_start: 'October 2023'
+          date_end: '2023-11-12'
+          date_start: '2023-10-12'
           description: Begin DevOps Career | Linux, AWS, Scripting, Jenkins, Ansible, Docker, K8s, Projects & ChatGPT.
           organization: udemy
           organization_url: https://www.coursera.org
