@@ -151,16 +151,18 @@ sections:
       buttons:
         - name: All
           tag: '*'
-        - name: Open Source Projects
-          tag: Open Source Projects
-        - name: Distributed Systems
-          tag: Distributed Systems
+        - name: Frontend Projects
+          tag: Frontend Projects
+        - name: Microservice Projects
+          tag: Microservice Projects
+        - name: Backend Projects
+          tag: Backend Projects
     design:
       # Choose how many columns the section has. Valid values: '1' or '2'.
-      columns: '1'
+      columns: '2'
       view: showcase
       # For Showcase view, flip alternate rows?
-      flip_alt_rows: false
+      flip_alt_rows: yes
   #- block: markdown
    # content:
       #title: Gallery

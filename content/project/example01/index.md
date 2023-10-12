@@ -2,7 +2,7 @@
 title: Online Mall Management System and Client Portal
 summary: An online shopping mall management system and client portal for the shopping mall with Spring framework and Vue.js.
 tags:
-  - Open Source Projects
+  - Frontend Projects 
 date: '2023-09-27T00:00:00Z'
 
 # Optional external URL for project (replaces project detail page).
