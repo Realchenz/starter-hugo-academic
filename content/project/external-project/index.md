@@ -2,7 +2,7 @@
 title: External Project
 summary: An example of linking directly to an external project website using `external_link`.
 tags:
-  - Distributed Systems
+  - Microservice Projects
 date: "2023-10-27T00:00:00Z"
 
 # Optional external URL for project (replaces project detail page).
