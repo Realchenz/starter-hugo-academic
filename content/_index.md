@@ -18,7 +18,7 @@ sections:
         - name: Java
           icon: java
           icon_pack: fab
-        - name: React
+        - name: React.js
           icon: react
           icon_pack: fab
         - name: JavaScript
@@ -29,6 +29,9 @@ sections:
           icon_pack: fab
         - name: Azure
           icon: cloud
+          icon_pack: fas
+        - name: Spring
+          icon: fa-server
           icon_pack: fas
   - block: experience
     content:
