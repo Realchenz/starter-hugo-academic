@@ -45,13 +45,13 @@ sections:
       #   Leave `date_end` empty if it's your current employer.
       #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
       items:
-        - title: CEO
-          company: GenCoin
-          company_url: ''
-          company_logo: org-gc
-          location: California
-          date_start: '2021-01-01'
-          date_end: ''
+        - title: Intern
+          company: CRRC
+          company_url: 'https://www.crrcgc.cc/en'
+          company_logo: CRRC
+          location: Hunan, China
+          date_start: '2019-07-01'
+          date_end: '2019-08-31'
           description: |2-
               Responsibilities include:
 
