@@ -5,7 +5,7 @@ avatar_filename: wechatimg11.jpg
 bio: My research interests include distributed systems, high performance
   computing and software development.
 interests:
-  - Software Development
+  - Software
   - Distributed Systems
   - High Performance Computing
 social:
