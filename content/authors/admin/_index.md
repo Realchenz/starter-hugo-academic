@@ -1,11 +1,11 @@
 ---
 title: Zhenxu Chen 陈臻旭
 role: Master's student in Computer Science @ Brandeis University
-avatar_filename: wechatimg11.jpg
+avatar_filename: avatar.jpg
 bio: My research interests include distributed systems, high performance
   computing and software development.
 interests:
-  - Software
+  - Software Development
   - Distributed Systems
   - High Performance Computing
 social:
