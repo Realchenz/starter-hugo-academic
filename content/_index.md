@@ -16,16 +16,19 @@ sections:
       title: Skills
       items:
         - name: Java
-          description: 90%
           icon: java
           icon_pack: fab
-        - name: Spring
-          description: 100%
-          icon: spring
-          icon_pack: fas
-        - name: Photography
-          description: 10%
-          icon: camera-retro
+        - name: React
+          icon: react
+          icon_pack: fab
+        - name: JavaScript
+          icon: js
+          icon_pack: fab
+        - name: Python
+          icon: python
+          icon_pack: fab
+        - name: Azure
+          icon: cloud
           icon_pack: fas
   - block: experience
     content:
