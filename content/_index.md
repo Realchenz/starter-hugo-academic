@@ -151,10 +151,10 @@ sections:
       buttons:
         - name: All
           tag: '*'
-        - name: Deep Learning
-          tag: Deep Learning
-        - name: Other
-          tag: Demo
+        - name: Open Source Projects
+          tag: Open Source Projects
+        - name: Distributed Systems
+          tag: Distributed Systems
     design:
       # Choose how many columns the section has. Valid values: '1' or '2'.
       columns: '1'
