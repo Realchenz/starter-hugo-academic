@@ -81,7 +81,7 @@ sections:
       #   Leave other parameters empty if not required.
       #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
       items:
-        - certificate_url: https://www.udemy.com
+        - certificate_url: https://www.coursera.org
           date_end: 'November 2023'
           date_start: 'October 2023'
           description: Begin DevOps Career | Linux, AWS, Scripting, Jenkins, Ansible, Docker, K8s, Projects & ChatGPT.
