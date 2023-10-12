@@ -19,9 +19,9 @@ sections:
           description: 90%
           icon: java
           icon_pack: fab
-        - name: Statistics
+        - name: Spring
           description: 100%
-          icon: chart-line
+          icon: spring
           icon_pack: fas
         - name: Photography
           description: 10%
