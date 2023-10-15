@@ -89,6 +89,14 @@ sections:
           organization_url: https://www.udemy.com
           title: DevOps Advanced
           url: https://www.udemy.com/course/decodingdevops/
+        - certificate_url: https://leetcode.cn/u/realchenz/
+          date_end: ''
+          date_start: '2023-08-31'
+          description: dfs|bfs|backtracking|dp|greedy|binary search|sliding window|stack|queue|heap|tree|graph|union find|trie|sort|bit manipulation|recursion|divide and conquer|segment tree|binary search tree
+          organization: leetcode
+          organization_url: https://leetcode.cn/
+          title: Data Structures and Algorithms
+          url: https://leetcode.cn/u/realchenz/
     design:
       columns: '2'
   - block: collection
