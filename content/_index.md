@@ -18,9 +18,9 @@ sections:
         - name: Java
           icon: java
           icon_pack: fab
-        - name: database
-          icon: database
-          icon_pack: fas
+#        - name: database
+#          icon: database
+#          icon_pack: fas
         - name: JavaScript
           icon: js
           icon_pack: fab
