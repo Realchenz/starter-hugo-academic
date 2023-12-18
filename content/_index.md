@@ -20,7 +20,7 @@ sections:
           icon_pack: fab
         - name: database
           icon: database
-          icon_pack: fab
+          icon_pack: fas
         - name: JavaScript
           icon: js
           icon_pack: fab
