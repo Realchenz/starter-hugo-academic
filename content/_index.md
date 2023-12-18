@@ -52,10 +52,10 @@ sections:
           location: Hunan, China
           date_start: '2019-07-01'
           date_end: '2019-09-31'
-          description: |2-
-              Responsibilities include:
-              * Made electrical and mechanical drawings: assisted engineers with mechanical parts and circuit drawings.
-              * Operated machining equipment: Used G-code to manipulate CNC machines to complete the machining of parts.
+#          description: |2-
+#              Responsibilities include:
+#              * Made electrical and mechanical drawings: assisted engineers with mechanical parts and circuit drawings.
+#              * Operated machining equipment: Used G-code to manipulate CNC machines to complete the machining of parts.
 #              * Deploying
 #        - title: Professor of Semiconductor Physics
 #          company: University X
