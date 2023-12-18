@@ -18,9 +18,9 @@ sections:
         - name: Java
           icon: java
           icon_pack: fab
-#        - name: database
-#          icon: database
-#          icon_pack: fas
+        - name: database
+          icon: database
+          icon_pack: fas
         - name: JavaScript
           icon: js
           icon_pack: fab
@@ -51,7 +51,7 @@ sections:
           company_logo: CRRC
           location: Hunan, China
           date_start: '2019-07-01'
-          date_end: '2019-09-31'
+          date_end: '2019-09-20'
 #          description: |2-
 #              Responsibilities include:
 #              * Made electrical and mechanical drawings: assisted engineers with mechanical parts and circuit drawings.
@@ -90,7 +90,7 @@ sections:
           url: https://www.udemy.com/course/decodingdevops/
         - certificate_url: https://leetcode.cn/u/realchenz/
           date_end: ''
-          date_start: '2023-08-31'
+          date_start: '2023-08-30'
           description: Data Structures and Algorithms
           organization: leetcode
           organization_url: https://leetcode.cn/
