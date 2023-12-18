@@ -7,7 +7,7 @@ bio: My research interests include distributed systems, high performance
 interests:
   - Software Development
   - Distributed Systems
-  - High Performance Computing
+  - High Performance Systems
 social:
   - icon: envelope
     icon_pack: fas

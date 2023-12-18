@@ -18,8 +18,8 @@ sections:
         - name: Java
           icon: java
           icon_pack: fab
-        - name: React.js
-          icon: react
+        - name: database
+          icon: database
           icon_pack: fab
         - name: JavaScript
           icon: js
@@ -27,10 +27,10 @@ sections:
         - name: Python
           icon: python
           icon_pack: fab
-        - name: Azure
+        - name: AWS
           icon: cloud
           icon_pack: fas
-        - name: Spring
+        - name: Spring Boot
           icon: server
           icon_pack: fas
   - block: experience
@@ -45,18 +45,17 @@ sections:
       #   Leave `date_end` empty if it's your current employer.
       #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
       items:
-        - title: Intern
+        - title: Mechanical Engineer Intern
           company: CRRC
           company_url: 'https://www.crrcgc.cc/en'
           company_logo: CRRC
           location: Hunan, China
           date_start: '2019-07-01'
-          date_end: '2019-08-31'
-#          description: |2-
-#              Responsibilities include:
-#
-#              * Analysing
-#              * Modelling
+          date_end: '2019-09-31'
+          description: |2-
+              Responsibilities include:
+              * Made electrical and mechanical drawings: assisted engineers with mechanical parts and circuit drawings.
+              * Operated machining equipment: Used G-code to manipulate CNC machines to complete the machining of parts.
 #              * Deploying
 #        - title: Professor of Semiconductor Physics
 #          company: University X
@@ -83,7 +82,7 @@ sections:
       items:
         - certificate_url: https://www.udemy.com
           date_end: '2023-11-12'
-          date_start: '2023-10-12'
+          date_start: '2023-08-12'
           description: Begin DevOps Career | Linux, AWS, Scripting, Jenkins, Ansible, Docker, K8s, Projects & ChatGPT.
           organization: udemy
           organization_url: https://www.udemy.com
@@ -92,7 +91,7 @@ sections:
         - certificate_url: https://leetcode.cn/u/realchenz/
           date_end: ''
           date_start: '2023-08-31'
-          description: dfs|bfs|backtracking|dp|greedy|binary search|sliding window|stack|queue|heap|tree|graph|union find|trie|sort|bit manipulation|recursion|divide and conquer|binary search tree
+          description: Data Structures and Algorithms
           organization: leetcode
           organization_url: https://leetcode.cn/
           title: Data Structures and Algorithms
