@@ -1,59 +1,96 @@
 ---
-title: Writing technical content in Markdown
-date: 2019-07-12
+title: Spring Framework issue \# 27652 Prohibit circular references by default
+date: 2024-01-30
 math: true
-image:
-  placement: 2
-  caption: 'Image credit: [**John Moeses Bauan**](https://unsplash.com/photos/OGZtQF8iC0g)'
+#image:
+#  placement: 2
+#  caption: 'Image credit: [**John Moeses Bauan**](https://unsplash.com/photos/OGZtQF8iC0g)'
 ---
 
-Wowchemy is designed to give technical content creators a seamless experience. You can focus on the content and Wowchemy handles the rest.
+## Issue description
 
-**Highlight your code snippets, take notes on math classes, and draw diagrams from textual representation.**
+Assignee: wilkinsona 
 
-On this page, you'll find some examples of the types of technical content that can be rendered with Wowchemy.
+We believe that circular references between beans should be avoided if at all possible. To help users avoid accidentally creating such dependency cycles, we should configure the ``BeanFactory`` to prohibit circular references by default. We'll allow them to be enabled via API and configuration property for those that really need them, as we did with bean definition overriding in 2.1. We should also update ``ApplicationContextRunner`` at the same time.
+
+**首先，这个issue是关于bean的循环引用问题，讨论里面主要涉及到bean的自我依赖（self-injection）问题，wilkinsona说自我依赖问题应该尽可能的避免，并且配置BeanFactory默认禁止循环依赖，如果有需求的话通过API和配置文件使循环依赖生效。
+但是，bmaehr说自我依赖是一个很常见的现象，因为很多时候需要在内部调用时使用spring的注解例如`` @Cacheable``, ``@transactional``, ``@retryable``，如果自我依赖被默认禁用了，需要有一个更普适性的方法去解决这个问题。bennettdams说可以使用``@Lazy``注解来避免自我依赖问题，并且提出让spring团队
+在docs里面补充demo来提供解决自我依赖问题的最佳实践。 Majstr说在平常业务开发中会经常遇到两个bean互相引用的问题。 jonenst说如果只是为了让一个bean能够自我依赖就全局修改配置文件的``spring.main.allow-circular-references``属性
+是不可取的。**
+
 
 ## Examples
 
-### Code
+### Self-injection
 
-Wowchemy supports a Markdown extension for highlighting code syntax. You can customize the styles under the `syntax_highlighter` option in your `config/_default/params.yaml` file.
+这是一个自我依赖的例子，``MyBean``类里面注入了自己，这样的话在初始化阶段会报错，因为默认情况下spring禁止bean的循环依赖。
 
-    ```python
-    import pandas as pd
-    data = pd.read_csv("data.csv")
-    data.head()
-    ```
-
-renders as
-
-```python
-import pandas as pd
-data = pd.read_csv("data.csv")
-data.head()
+```java
+@Component
+public class MyBean {
+@Autowired
+private MyBean self;  // 自己引用自己
+}
 ```
+
+### Internal method calls
+
+自我依赖为什么是一个常见的现象呢？因为很多时候需要在内部调用时使用spring的注解例如`` @Cacheable``, ``@transactional``, ``@retryable``，这些注解都是通过AOP实现的，所以在内部调用的时候需要使用spring的注解，这样的话就会出现自我依赖的问题。
+
+```java
+@Component
+public class MyBean {
+  @Autowired
+  private MyBean self;
+
+  @PostConstruct
+  public void init() {
+    // 在初始化阶段内部调用自己的方法
+    self.internalMethod();
+  }
+
+  @Transactional
+  public void internalMethod() {
+    // 使用Spring的注解进行内部方法调用
+    // ...
+  }
+}
+```
+
+### Circular references
+
+循环依赖的问题，在准备面试的时候看到过这个问题，但是没有深入研究过，这里简单的记录一下。
+
+1. 什么是循环依赖？
+
+循环依赖就是A依赖B，B依赖A，这样的话就会形成一个循环依赖的问题。
+
+```java
+@Component
+public class A {
+  // A中注入了B
+  @Autowired
+  private B b;
+}
+
+@Component
+public class B {
+  // B中也注入了A
+  @Autowired
+  private A a;
+}
+```
+
+2. spring是如何解决循环依赖的问题。这个问题可以参考 面试必杀技，讲一讲Spring中的循环依赖[https://developer.aliyun.com/article/766880]
+
+其中提到循环依赖能被解决的前提条件是：（1）**循环依赖的bean必须是单例的**，这个好理解，因为单例的bean在spring容器初始化的时候就会被创建，所以spring可以在创建bean的时候将其放入缓存中，这样的话就可以解决循环依赖的问题。（2）依赖注入的方式不能全是构造器注入的方式，因为构造器注入的方式是在bean创建的时候就会调用构造器，这样的话就会导致两个bean都获取不到对方的实例，所以出现循环依赖问题。
+不能全是构造器构造器注入的方式，那么就是说可以有一部分是构造器，一部分是setter注入的方式，这样的话就可以解决循环依赖的问题。
+
+```java
 
 ### Mindmaps
 
-Wowchemy supports a Markdown extension for mindmaps.
 
-Simply insert a Markdown `markmap` code block and optionally set the height of the mindmap as shown in the example below.
-
-A simple mindmap defined as a Markdown list:
-
-<div class="highlight">
-<pre class="chroma">
-<code>
-```markmap {height="200px"}
-- Hugo Modules
-  - wowchemy
-  - wowchemy-plugins-netlify
-  - wowchemy-plugins-netlify-cms
-  - wowchemy-plugins-reveal
-```
-</code>
-</pre>
-</div>
 
 renders as
 
