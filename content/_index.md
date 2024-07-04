@@ -55,18 +55,18 @@ sections:
           description: |2-
               Responsibilities include:
               * Made electrical and mechanical drawings: assisted engineers with mechanical parts and circuit drawings.
-              * Operated machining equipment: Used G-code to manipulate CNC machines to complete the machining of parts.
-#              * Deploying
-#        - title: Professor of Semiconductor Physics
-#          company: University X
-#          company_url: ''
-#          company_logo: org-x
-#          location: California
-#          date_start: '2016-01-01'
-#          date_end: '2020-12-31'
-#          description: Taught electronic engineering and researched semiconductor physics.
-#    design:
-#      columns: '2'
+              * Operated machining equipment: Used G-code to manipulate CNC machines to complete parts machining.
+        - title: Software Engineer Intern
+          company: SAIC
+          company_url: 'https://www.saicmotor.com/'
+          company_logo: SAIC
+          location: Shanghai, China
+          date_start: '2024-07-01'
+          date_end: '2024-08-30'
+          description: |2-
+              Responsibilities include:
+              * Information system development and workflow digitalization.
+
   - block: accomplishments
     content:
       # Note: `&shy;` is used to add a 'soft' hyphen in a long heading.
